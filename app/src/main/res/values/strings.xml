@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TailorMeasure</string>
+    <string name="note_tailor">دفترچه خیاطی</string>
+    <string name="search">جستجو</string>
+    <string name="first_name">نام :</string>
+    <string name="last_name">نام خانوادگی :</string>
+    <string name="phone_number">شماره موبایل :</string>
+    <string name="ascending">صعودی</string>
+    <string name="descending">نزولی</string>
+    <string name="size_body">سایز</string>
+    <string name="dress">لباس ها</string>
+    <string name="add_dress">اضافه کردن لباس</string>
+    <string name="add_size">اضافه کردن سایز</string>
+    <string name="name_dress">نام لباس :</string>
+    <string name="price">قیمت لباس :</string>
+    <string name="paid">مبلغ پرداخت شده :</string>
+    <string name="account_balance">مانده حساب :</string>
+    <string name="start_date">تاریخ شروع :</string>
+</resources>

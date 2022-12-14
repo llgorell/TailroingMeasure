@@ -1,10 +1,22 @@
 package com.example.tailormeasure.presentation.size_body
 
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import com.example.tailormeasure.presentation.util.Screens
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
+import com.example.tailormeasure.R
 
 @Composable
 fun SizeBodyScreen() {
-    Text(text = "Size of Body")
+    Column(Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+    horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+        Text(text = stringResource(id = R.string.empty_size))
+    }
+
 }

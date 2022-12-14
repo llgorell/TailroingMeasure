@@ -41,7 +41,8 @@ object AppModule {
             deletePerson = DeletePersonUseCase(repository),
             getPerson = GetPersonUseCase(repository),
             getPersonWithDress = GetPersonWithDressUseCase(repository),
-            addDress = AddDressUseCase(repository)
+            addDress = AddDressUseCase(repository),
+            addSize = AddSizeBodyUseCase(repository)
         )
     }
 }

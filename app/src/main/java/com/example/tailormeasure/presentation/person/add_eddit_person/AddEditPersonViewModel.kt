@@ -1,7 +1,5 @@
 package com.example.tailormeasure.presentation.person.add_eddit_person
 
-import android.content.Intent
-import android.net.Uri
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.SavedStateHandle
@@ -107,12 +105,6 @@ class AddEditPersonViewModel @Inject constructor(
             is AddEditPersonEvent.SavePerson -> {
                 savePerson()
             }
-            is AddEditPersonEvent.Call -> {
-                val dialInetnt = Intent(Intent.ACTION_CALL)
-                dialInetnt.data = Uri.parse("tel:" + event.phone)
-
-
-            }
         }
     }
 
@@ -155,6 +147,15 @@ class AddEditPersonViewModel @Inject constructor(
                         family = family.value.text,
                         phone = currentPhone ?: phone.value.text,
                     )
+                )
+                _name.value = name.value.copy(
+                    text = "",
+                )
+                _family.value = family.value.copy(
+                    text = "",
+                )
+                _phone.value = phone.value.copy(
+                    text = "",
                 )
                 _eventFlow.emit(UiEvent.SavePerson)
             }catch (e : Exception){

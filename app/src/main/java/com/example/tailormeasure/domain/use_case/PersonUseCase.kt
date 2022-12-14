@@ -6,5 +6,6 @@ data class PersonUseCase(
     val deletePerson : DeletePersonUseCase,
     val getPerson : GetPersonUseCase,
     val getPersonWithDress : GetPersonWithDressUseCase,
-    val addDress : AddDressUseCase
+    val addDress : AddDressUseCase,
+    val addSize : AddSizeBodyUseCase
 )

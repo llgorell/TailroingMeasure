@@ -23,6 +23,8 @@ private val LightColorPalette = lightColors(
     onBackground = DarkGray,
     primary = RedPink,
     primaryVariant = Violet,
+    onPrimary = Color.White,
+    onSecondary = BabyBlue,
     secondary = RedOrange
 
     /* Other default colors to override

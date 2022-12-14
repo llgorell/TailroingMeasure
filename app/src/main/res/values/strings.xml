@@ -16,4 +16,6 @@
     <string name="paid">مبلغ پرداخت شده :</string>
     <string name="account_balance">مانده حساب :</string>
     <string name="start_date">تاریخ شروع :</string>
+    <string name="save_person">ذخیره</string>
+    <string name="empty_size">هیج سایز درج نشده است</string>
 </resources>

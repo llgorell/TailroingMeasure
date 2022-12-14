@@ -9,6 +9,5 @@ sealed class AddEditPersonEvent {
     data class ChangeFamilyFocus(val focusState: FocusState) : AddEditPersonEvent()
     data class EnteredPhone(val value :String) : AddEditPersonEvent()
     data class ChangePhoneFocus(val focusState: FocusState) : AddEditPersonEvent()
-    data class Call(val phone : String) : AddEditPersonEvent()
     object SavePerson : AddEditPersonEvent()
 }

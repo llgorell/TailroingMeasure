@@ -1,7 +1,8 @@
-package com.example.tailormeasure.presentation.dress.component
+package com.example.tailormeasure.presentation.util
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.OutlinedTextField
 import androidx.compose.material.Text
@@ -21,6 +22,7 @@ fun InputTextField(
     isError : Boolean = false,
     textStyle: TextStyle = TextStyle(),
     isVisibleHint : Boolean = true,
+    keyboardOptions: KeyboardOptions,
     modifier: Modifier = Modifier,
     onChangeValue: (String) -> Unit,
     onFocusChange: (FocusState) -> Unit,
@@ -38,6 +40,8 @@ fun InputTextField(
                     Text(text = errorMessage, color = MaterialTheme.colors.error, style = textStyle)
                 }
             },
+            keyboardOptions = keyboardOptions
+            ,
             modifier =Modifier.fillMaxWidth()
                 .onFocusChanged { onFocusChange(it) }
             )
